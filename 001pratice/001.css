@@ -1,9 +1,38 @@
 
+span {
+    font-size: 25px;
+    font-weight:bold;
+}
 
-
-.box1 {
+div {
     width: 150px;
     height: 50px;
+    margin-bottom: 50px;
+}
+
+.box3 > span {
+    position: relative;
+    top: 20%;
+}
+
+.box2 > span {
+    position: relative;
+    top: 20%;
+}
+
+.box1 > span {
+    position: relative;
+    top: 20%;
+}
+
+.box3 {
+    text-align:center;
+    border-radius: 0px 50px 50px 60px;
+    border: 2px solid rgb(210, 210, 210);
+    box-shadow: 5px 5px 10px rgb(226, 226, 226);
+}
+
+.box1 {
     text-align:center;
     background-color: #343F50;
     color: white;
@@ -13,7 +42,13 @@
     box-sizing: border-box;
 }
 
-div {
-    font-size: 25px;
-    font-weight:bold;
+.box2 {
+    background: linear-gradient(115deg, rgba(2,0,36,1) 0%, rgba(131,83,214,1) 0%, rgba(2,186,224,1) 100%, rgba(0,212,255,1) 100%);
+    text-align: center;
+    color: white;
+    border-radius: 40px;
+    box-sizing: content-box;
+    outline: 3px dashed rgb(173, 153, 193);
 }
+
+
