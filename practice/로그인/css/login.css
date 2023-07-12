@@ -1,0 +1,78 @@
+
+
+body,
+h1,
+h2,
+p  {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Spoqa Han Sans Neo';
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    src: url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.a11y-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+img {
+    width: 64px;
+    height: 18px;
+}
+
+.container {
+    font-family: inherit;
+    width: 350px;
+    height: 140px;
+    border-radius: 5px;
+    border: 1px solid #DBDBDB;
+    background: #FFF;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+
+section > button {
+    width: 318px;
+    height: 40px;
+    background-color: #711BFF;
+    border-radius: 3px;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
+}
+
+
+
+
+
+
