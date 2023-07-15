@@ -1,0 +1,54 @@
+body,
+h1,
+h2,
+p {
+    margin: unset;
+    padding: unset;
+}
+
+h1 {
+    font-size: unset;
+}
+
+body {
+    background-image: url(../images/image\ 1.png);
+    background-size: cover;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 100px auto;
+}
+
+.contents {
+    background-color: aqua;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 0 0 30px 30px;
+    background-color: #9C6035;
+    box-shadow: 1px 1px  #9C6035;
+    border-bottom: 10px solid #46260E;
+}
+
+.contents-text {
+    color: white;
+}
+
+.contents-text h1 {
+    font-size: 36px;
+}
+
+.header img {
+    margin: 0 auto;
+    display: block;
+}
+
+.contents-img > img {
+    display: block;
+    margin: 0 auto;
+}
+
+.contents .contents-text {
+    padding: 10px 20px;
+}
+
