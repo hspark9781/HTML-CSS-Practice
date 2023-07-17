@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        grid-layout
+    </title>
+    <style>
+        .container {
+            width: 600px;
+            height: 600px;
+            background-color: #eee;
+            display: grid;
+            grid-template-areas:
+                "a a b"
+                "c d b"
+                "e f f"
+            ;
+
+            grid-template-columns: 2fr 1fr 2fr;
+            grid-template-rows: 2fr 1fr 2fr;
+            gap: 10px;
+        }
+
+        .container div:nth-child(1) {
+            grid-area: a;
+            background-color: rgb(48, 48, 255);
+        }
+
+        .container div:nth-child(2) {
+            grid-area: b;
+            background-color: rgb(248, 255, 48);
+        }
+
+        .container div:nth-child(3) {
+            grid-area: c;
+            background-color: rgb(96, 60, 162);
+        }
+
+        .container div:nth-child(4) {
+            grid-area: d;
+            background-color: orange;
+        }
+
+        .container div:nth-child(5) {
+            grid-area: e;
+            background-color: rgb(210, 99, 52);
+        }
+
+        .container div:nth-child(6) {
+            grid-area: f;
+            background-color: seagreen;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>a</div>
+        <div>b</div>
+        <div>c</div>
+        <div>d</div>
+        <div>e</div>
+        <div>f</div>
+    </div>
+    
+</body>
+</html>
