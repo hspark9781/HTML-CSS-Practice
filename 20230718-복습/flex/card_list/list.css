@@ -1,0 +1,149 @@
+body,
+h1,
+h2,
+p {
+    margin: unset;
+    padding: unset;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+p,
+a {
+    font: inherit;
+    color: #5A6A72;
+    margin: 0;
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: unset;
+    padding: unset;
+}
+
+.wrapper {
+    width: 1224px;
+    max-width: calc(100% - (30px * 2));
+    margin: 0 auto;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 24px;
+}
+
+h1 {
+    color:  #29363D;
+    font-family: Pretendard;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; 
+    margin: 38px 0;
+}
+
+.card-box {
+    width: 288px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.10);
+    padding: 16px 0;
+}
+
+header {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding: 0 16px;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 50/50;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.contents {
+    padding: 14px 0;
+}
+
+.contents img {
+    width: 100%;
+    aspect-ratio: 288/196;
+    object-fit: cover;
+}
+
+section,
+footer {
+    padding: 0 16px;
+}
+
+.contents-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: calc(1em * 1.6 * 2);
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.read {
+    text-decoration: underline;
+    font-size: 14px;
+    color: #29363D;
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+.read-box svg {
+    width: 4px;
+    height: 6px;
+    stroke-width: 2px;
+    stroke: #29363D;
+}
+
+.menu img {
+    width: 32px;
+    height: 32px;
+}
+
+
+
+
+
+
+
+
+
+
