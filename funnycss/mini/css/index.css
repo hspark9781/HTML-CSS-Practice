@@ -13,6 +13,7 @@ h1 {
 body {
     background-image: url(../images/image\ 1.png);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .wrapper {
@@ -21,7 +22,6 @@ body {
 }
 
 .contents {
-    background-color: aqua;
     width: 300px;
     margin: 0 auto;
     border-radius: 0 0 30px 30px;
@@ -34,7 +34,7 @@ body {
     color: white;
 }
 
-.contents-text h1 {
+.contents-text .title {
     font-size: 36px;
 }
 
