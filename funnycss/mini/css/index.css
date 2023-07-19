@@ -26,7 +26,6 @@ body {
     margin: 0 auto;
     border-radius: 0 0 30px 30px;
     background-color: #9C6035;
-    box-shadow: 1px 1px  #9C6035;
     border-bottom: 10px solid #46260E;
 }
 
@@ -36,6 +35,7 @@ body {
 
 .contents-text .title {
     font-size: 36px;
+    margin-bottom: 7px;
 }
 
 .header img {
@@ -49,6 +49,10 @@ body {
 }
 
 .contents .contents-text {
-    padding: 10px 20px;
+    padding: 10px 20px 40px 20px;
+}
+
+.des {
+    color: #E8BC9C;;
 }
 
