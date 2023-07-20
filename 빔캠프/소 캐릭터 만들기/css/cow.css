@@ -1,0 +1,140 @@
+
+/* Reset */
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+strong {
+    font-weight: normal;
+}
+
+:root {
+    --primary-color: saddlebrown;
+    --secondary-color: burlywood;
+    --white-color: white;
+    --red-color: orangered;
+}
+/* Layout */
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 캐릭터 만들기 */
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    font-family: "arial";
+}
+
+.cow {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-radius: 40px 40px 100px 100px;
+    box-shadow: inset 0 0 100px currentColor;
+
+}
+
+.horn {
+    background-color: var(--white-color);
+    height: 80px;
+    border-radius: 0 0 70px 70px;
+    margin: 0 -40px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.horn::before {
+    content: "wow";
+    display: block;
+    height: 40px;
+    border-radius: 0 0 120px 120px;
+    background-color: var(--primary-color);
+}
+
+.eyes {
+    border-top: 30px double;
+    margin: 20px 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.eyes::before,
+.eyes::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: var(--white-color);
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: inset 0 -3px 0 10px currentColor;
+}
+
+.horn::after {
+    content: "";
+    background-color: rosybrown;
+    display: block;
+    height: 60px;
+    margin: 0 60px;
+    transform: translateY(-10px);
+    border-radius: 12px;
+    box-shadow: inset 0 -20px 10px rgb(0, 0, 0, 0.2);
+}
+
+.nose {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    margin: 0 -20px;
+    background-color: var(--secondary-color);
+    border-radius: 40px;
+}
+
+.nose::before,
+.nose::after {
+    content: "";
+    width: 30px;
+    height: 15px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.mouth {
+    background-color: var(--secondary-color);
+    height: 40px;
+    margin: 0 40px;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 10px 10px currentColor;
+    position: relative;
+}
+
+.mouth::after {
+    content: "";
+    background-color: var(--red-color);
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    margin: 0 70px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.77);
+    border-bottom: 20px solid var(--secondary-color);
+    border-radius: 0 0 30px 30px;
+    transform: translateY(100%);
+}
+
+
