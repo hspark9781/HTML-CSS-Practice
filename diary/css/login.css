@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
 body,
 h1,
 h2,
@@ -6,11 +21,18 @@ p {
     padding: 0;
 }
 
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+img {
+    vertical-align: top;
+}
+
+input {
+    box-sizing: border-box;
+    border: 0;
+}
+
+button {
+    border: 0;
+    background-color: inherit;
 }
 
 body {
@@ -23,136 +45,108 @@ h2,
 p,
 a {
     font: inherit;
-    text-decoration: none;
-    color: #5A6A72;
 }
 
-img {
-    vertical-align: top;
-}
-
-input {
+.a11y-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
     padding: 0;
+    position: absolute;
 }
 
-.max-width {
-    width: 1224px;
-    max-width: calc(100% - 60px);
-    margin: auto;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.header {
-    background-color: #FFF;
-}
-
-.header .max-width {
-    height: 120px;
+header {
+    background-color: white;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
+    padding: 22px 108px;
 }
 
-
-.btn-join {
-    display: inline-flex;
-    height: 40px;
-    padding: 0 20px 0 52px;
-    align-items: center;
-    background-image: url(../images/icon-join.svg);
-    background-repeat: no-repeat;
-    background-color: #fff;
-    background-position: 10px 50%;
-
+.main-logo {
+    width: 156px;
+    aspect-ratio: 156/75;
 }
 
-
-.contents {
-    height: 500px;
+.join-btn {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-top: 71px;
 }
 
-section {
-    width: 390px;
-    margin: auto;
-}
-
-.section-header {
-    text-align: center;
-}
-
-.logo-img {
+.login-header {
     width: 250px;
-    height: 120px;
-}
-
-.login-text {
-    font-size: 24px;
-    font-weight: bold;
-    color: #29363D;
-    text-align: center;
-    margin-top: 29px;
+    margin: auto;
+    margin-top: 71px;
     margin-bottom: 40px;
+    text-align: center;
 }
 
-.login input {
+
+.login-header img {
+    display: block;
+    width: 250px;
+    aspect-ratio: 250/120;
+    margin-bottom: 29px;
+}
+
+.title {
+    font-family: 'Pretendard-Bold';
+    color: #29363D;
+    font-size: 24px;
+    box-shadow: inset 0 -0.5em 0 rgb(255, 79, 110, 0.2);
+    border-bottom: solid 2px rgb(255, 79, 110);
+}
+
+
+.login-form {
+    width: 392px;
+    margin: 40px auto 50px;
+}
+
+.login-form label {
+    display: block;
+    color: #29363D;
+    font-size: 14px;
+}
+
+.login-form input {
     width: 100%;
     height: 48px;
     border-radius: 4px 4px 0px 0px;
     border-bottom: 1px solid #677880;
     background: #FFF;
+}
+
+.login-form div {
     margin-bottom: 24px;
 }
 
-.login button {
+.login-btn {
     width: 100%;
     height: 48px;
     border-radius: 4px;
+    background: #29363D;
     color: white;
-    background-color: black;
-    font-size: 16px;
 }
-
 
 footer {
-    height: 70px;
     text-align: center;
-}
-
-.cw {
-    margin-top: 52px;
     color: #677880;
     font-size: 12px;
+    margin-top: 52px;
 }
 
-.form label {
-    display: block;
-    font-size: 14px;
-    color: #29363D;
-    margin-bottom: 8px;
-}
 
-.form button[type="submit"] {
-    width: 100%;
-    height: 48px;
-    border: 0;
-    background-color: #29363D;
-    color: #F4F5F5;
-    font-size: 16px;
-}
 
-.form input {
-    width: 100%;
-    height: 48px;
-    border-radius: 4px 4px 0px 0px;
-    border-bottom: 1px solid 677880;
-    background: #FFF;
-    margin-bottom: 24px;
-}
 
-form p {
-    margin-bottom: 8px;
-}
+
+
 
