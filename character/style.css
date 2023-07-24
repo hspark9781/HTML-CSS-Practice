@@ -146,7 +146,7 @@ body {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: rgb(255, 214, 221);
+    background-color: rgb(255, 214, 221, 0.5);
 }
 
 
