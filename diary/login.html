@@ -4,39 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>다이어리 | login</title>
-    <link rel="stylesheet" href="css/common.css">
+    <title>두근두근 비밀일기 | 로그인</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <header class="header">
-        <div class="max-width">
-            <h1>
-                <a href="#">
-                    <img src="images/logo.svg" alt="두근두근 비밀일기">
-                </a>
-            </h1>
-            <a href="" class="btn-join">회원가입</a>
+        <h1 class="max-width">
+            <a href="./">
+                <img src="images/logo.svg" alt="">
+            </a>
+            <a href="" class="join-btn">
+                <span>회원가입</span>
+            </a>
         </div>
     </header>
-    <main class="login max-width">
-        <h2 class="main-title">
-            <img src="images/logo.svg" alt="">
-            <strong>로그인</strong>
-        </h2>
-        <form class="form">
-            <div>
-                <label for="user-email">이메일</label>
-                <input type="text" id="user-email">
-            </div>
-            <div>
-                <label for="user-pw">비밀번호</label>
-                <input type="password" id="user-password">
-            </div>
-            <button type="submit">로그인</button>
-        </form>
-    </main>
+    <main class="main max-width">
+            <h2 class="main-title">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="">
+                </div>
+                <strong>로그인</strong>
+            </h2>
+            <form class="form">
+                <div>
+                    <label for="user-email">이메일</label>
+                    <input type="text" id="user-email">
+                </div>
+                <div>
+                    <label for="user-pw">비밀번호</label>
+                    <input type="password" id="user-pw">
+                </div>
+                <button type="submit">로그인</button>
+            </form>
+        </main>
+        </div>
     <footer class="footer">
-        <p>Copyright 2023.WENIV All rights reserved.</p>
+        Copyright 2023. WENIV All rights reserved.
     </footer>
 </body>
 </html>
